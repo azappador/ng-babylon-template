@@ -7,13 +7,12 @@ import { CommonModule } from '@angular/common';
   templateUrl: './engine.component.html',
   standalone: true,
   imports: [CommonModule],
-  providers: [EngineService]
+  providers: [EngineService],
 })
-export class EngineComponent implements OnInit {
+export class EngineComponent implements OnInit {  
 
   @ViewChild('rendererCanvas', { static: true })
-  public rendererCanvas: ElementRef<HTMLCanvasElement>;
-
+  public rendererCanvas: any = ElementRef<HTMLCanvasElement>;
   public constructor(private engServ: EngineService) { }
 
   public ngOnInit(): void {
