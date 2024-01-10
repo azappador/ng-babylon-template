@@ -22,10 +22,7 @@
       "dom"
     ],
     "resolveJsonModule": true,
-    "esModuleInterop": true,
-    "types": [
-      "babylonjs"
-    ]
+    "esModuleInterop": true
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
